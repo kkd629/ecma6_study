@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let arr = [1,2,3,4]
+	let ws = new WeakSet()
+	
+	ws.add(arr)				// valid
+	ws.add(111)				// invalid
+	ws.add('111')			// invalid
+	ws.add(null)			// invalid
+	ws.add(function(){})	// valid
+</script>
+
+</body>
+</html>
